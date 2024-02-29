@@ -50,7 +50,7 @@ To get started with the Student Hub API, follow these steps:
 1. Clone the repository to your local machine.
 2. Ensure you have Eclipse IDE installed with Maven support.
 3. Set up MySQL Workbench and create the necessary database schema.
-4. Import the project into Eclipse.
+4. Import the project into Eclipse or IntelliJ IDE.
 5. Configure the database connection in `application.properties`.
 6. Build and run the application.
 7. Test the endpoints using Postman or any HTTP client.
