@@ -38,6 +38,7 @@ This project can be utilized for:
 - `StudentDetailsNotFoundException.java`: Custom exception for handling not found errors.
 - `StudentDetailsExceptionHandler.java`: Class for handling exceptions.
 - `StudentDetailsException.java`: General exception class.
+- `ResponseHandler.java`: Custom Response Handling.
 
 ### Interfaces
 - `StudentDetailsRepository.java`: Interface for CRUD operations on student details.
