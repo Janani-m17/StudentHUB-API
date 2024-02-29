@@ -1,7 +1,10 @@
 package com.example.StudentInfo.controller;
 
+import com.example.StudentInfo.ResponseHandler;
 import com.example.StudentInfo.model.StudentDetails;
 import com.example.StudentInfo.service.StudentDetailsService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,9 +23,9 @@ public class StudentDetailsController {
     }
     //read specific rollno
     @GetMapping("{StdRollNo}")
-    public StudentDetails getstudentdetails(@PathVariable("StdRollNo")String StdRollNo) {
-       // return ResponseHandler.responseBuilder(message = "Requested Student Details are given here", HttpStatus.OK,studentdetailsService.getstudentdetails(StdRollNo));
-        return studentdetailsService.getstudentdetails(StdRollNo);
+    public ResponseEntity<Object> getstudentdetails(@PathVariable("StdRollNo")String StdRollNo) {
+        return ResponseHandler.responseBuilder(message = "Requested Student Details are given here", HttpStatus.OK,studentdetailsService.getstudentdetails(StdRollNo));
+        //return studentdetailsService.getstudentdetails(StdRollNo);
     }
     //read all rollno
     @GetMapping()
