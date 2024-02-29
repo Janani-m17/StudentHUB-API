@@ -1,7 +1,16 @@
-package com.example.StudentInfo;
+package com.example.StudentInfo.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+
+
+@Entity
+@Table(name="StudentDetails_info")
 public class StudentDetails {
 
+    @Id
     private String StdRollNo;
     private String StdName;
     private String StdDept;
