@@ -1,5 +1,6 @@
 package com.example.StudentInfo.service;
 
+import com.example.StudentInfo.StudentDetailsNotFoundException;
 import com.example.StudentInfo.model.StudentDetails;
 import com.example.StudentInfo.repository.StudentDetailsRepository;
 import org.springframework.stereotype.Service;
@@ -36,8 +37,8 @@ public class StudentDetailsServiceImpl implements StudentDetailsService {
 
     @Override
     public StudentDetails getstudentdetails(String StdRollNo) {
-//        if(studentdetailsRepository.findById(StdRollNo).isEmpty())
-//            throw new StudentDetailsNotFoundException("Requested Student Details does not exists");
+        if (studentdetailsRepository.findById(StdRollNo).isEmpty())
+            throw new StudentDetailsNotFoundException("Requested Student Details does not exists");
         return studentdetailsRepository.findById(StdRollNo).get();
     }
 
