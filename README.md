@@ -8,9 +8,6 @@ Welcome to the Student Hub API project! This API is designed to manage student i
 2. [Usage Scope](#usage-scope)
 3. [File Structure](#file-structure)
 4. [Getting Started](#getting-started)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Acknowledgments](#acknowledgments)
 
 ## Features <a name="features"></a>
 
